@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <script defer src="./backend/script.js"></script>
+
+  <title>ByteWave</title>
+
+  <style>
+    /* SECTION BACKGROUND */
+            .cta-section {
+            /* background: linear-gradient(135deg, #3a3a3a, #2e2e2e); */
+            background: #0071e3;
+            padding: 100px 20px;
+            color: #fff;
+            }
+
+            /* CONTAINER */
+            .cta-container {
+            max-width: 1200px;
+            min-height: 20vh;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+            }
+
+            /* LEFT SIDE */
+            .cta-left {
+            flex: 1;
+            }
+
+            .cta-left h1 {
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            }
+
+            .cta-sub {
+            font-size: 18px;
+            color: #dcdcdc;
+            }
+
+            /* RIGHT CARD */
+            .cta-card {
+            flex: 0 0 420px;
+            background: #f2f2f2;
+            padding: 30px;
+            border-radius: 12px;
+            color: #000;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+            }
+
+            .cta-card label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 12px;
+            font-weight: 500;
+            }
+
+            .cta-card select {
+            width: 100%;
+            padding: 14px 16px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+            cursor: pointer;
+            background: #fff;
+            transition: all 0.3s ease;
+            }
+
+            .cta-card select:focus {
+            outline: none;
+            border-color: #000;
+            }
+
+            /* ----------------------
+            RESPONSIVE
+            -----------------------*/
+
+            /* Tablet */
+            @media (max-width: 992px) {
+            .cta-left h1 {
+                font-size: 38px;
+            }
+
+            .cta-container {
+                gap: 40px;
+            }
+            }
+
+            /* Mobile */
+            @media (max-width: 768px) {
+            .cta-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cta-left h1 {
+                font-size: 30px;
+            }
+
+            .cta-card {
+                width: 100%;
+                max-width: 400px;
+                flex: 0 0 140px;
+            }
+            }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="top-bar">
+      <div class="top-bar__content">
+        <section class="phone">
+          <i class="fa-solid fa-phone icon"></i>
+          <span><a href="tel:6289233376">+91 6289233376</a></span>
+        </section>
+        <section class="email">
+          <i class="fa-solid fa-envelope icon"></i>
+          <span><a href="mailto:someone@example.com">bytewaveconsultancy@gmail.com</a></span>
+        </section>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <div class="bottom-bar__content">
+        <a href="#" class="logo">
+          <img class="logo__img" onclick="window.location.href='index.html'" src="./img/logo/bytewave.png" alt="logo">
+          <!-- <span class="logo__text">CloudServices</span> -->
+        </a>
+    
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./pages/aboutus.html">About Us</a>
+            </li>
+            <li class="nav__item nav__item--dropdown">
+                        <a class="nav__link nav__link--dropdown" href="#">Services <span class="dropdown-arrow"></span></a>
+
+                        <ul class="dropdown">
+                            <li><a href="./services/digital-marketing.html">Digital Marketing</a></li>
+                            <li><a href="./services/seo.html">SEO</a></li>
+                            <li><a href="./services/web-development.html">Web / App Development</a></li>
+                            <li><a href="./services/graphic-design.html">Graphic Design</a></li>
+                            <li><a href="./services/ai-services.html">AI Services</a></li>
+                            <li><a href="./services/hosting.html">Hosting Services</a></li>
+                        </ul>
+                    </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./pages/portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./blog/blog.html">Blog</a>
+            </li>
+            <li class="nav__item">
+              <a class="btn" href="./pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+  
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <video 
+      id="heroVideo"
+      autoplay 
+      muted 
+      loop 
+      playsinline 
+      preload="metadata"
+      poster="fallback.jpg"
+    >
+      <source src="./assets/4SightSuperia.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <button class="video-toggle" id="videoToggle">
+      Pause
+    </button>
+  </section>
+
+  <!-- Services We Provide Column -->
+  <section class="body2 wrapper2">
+    <h4 class="top-text">WHAT WE DO</h4>
+    <div class="line-container">
+      <div class="ball"></div>
+    </div>
+    <h2 class="bottom-text">Services That Help You Grow</h2>
+  </section>
+  <section class="body-1" id="body-1">
+    <div class="blog-slider">
+      <div class="slider-wrapper">
+
+        <div class="arrow left" id="prev">
+          <svg fill="none" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+          </svg>
+        </div>
+
+        <div class="arrow right" id="next">
+          <svg fill="none" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </div>
+
+        <div class="slider" id="slider">
+
+          <a href="services/web-development.html" class="card">
+            <img src="img/misc-squares/webdev.png">
+            <div class="card-content">
+              <h3>
+                Website Development
+                <svg class="redirect-icon" fill="none" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </h3>
+              <p style="margin-bottom: 15px;">Experience the <b>craftsmanship</b> of our web design & development service.</p>
+              <p style="width: fit-content; border-radius: 25px; padding: 8px 20px; background: #0071e3; color: #fff;">Read More</p>
+            </div>
+          </a>
+
+          <a href="services/web-development.html" class="card">
+            <img src="img/misc-squares/appdev.png">
+            <div class="card-content">
+              <h3>
+                App Development
+                <svg class="redirect-icon" fill="none" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </h3>
+              <p style="margin-bottom: 15px;">Turn your website or business idea into an <b>user-friendly app.</b></p>
+              <p style="width: fit-content; border-radius: 25px; padding: 8px 20px; background: #0071e3; color: #fff;">Read More</p>
+            </div>
+          </a>
+
+          <a href="services/digital-marketing.html" class="card">
+            <img src="img/misc-squares/digitalmarketing.png">
+            <div class="card-content">
+              <h3>
+                Digital Marketing
+                <svg class="redirect-icon" fill="none" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </h3>
+              <p style="margin-bottom: 15px;">Give your business a <b>boost</b> with professional hands on <b>marketing experts.</b></p>
+              <p style="width: fit-content; border-radius: 25px; padding: 8px 20px; background: #0071e3; color: #fff;">Read More</p>
+            </div>
+          </a>
+
+          <a href="services/graphic-design.html" class="card">
+            <img src="img/misc-squares/designing.png">
+            <div class="card-content">
+              <h3>
+                Graphic Design
+                <svg class="redirect-icon" fill="none" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </h3>
+              <p style="margin-bottom: 15px;">Professional static & video creative designs that helps <b>gain organic traffic.</b></p>
+              <p style="width: fit-content; border-radius: 25px; padding: 8px 20px; background: #0071e3; color: #fff;">Read More</p>
+            </div>
+          </a>
+
+          <a href="services/hosting.html" class="card">
+            <img src="img/misc-squares/webhosting.png">
+            <div class="card-content">
+              <h3>
+                Hosting Services
+                <svg class="redirect-icon" fill="none" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </h3>
+              <p style="margin-bottom: 15px;">Professional Free Hosting with Lifetime Free SSL & License.</p>
+              <p style="width: fit-content; border-radius: 25px; padding: 8px 20px; background: #0071e3; color: #fff;">Read More</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Recent Works We've Done Column -->
+  <section class="body2 wrapper2">
+    <h4 class="top-text">RECENT WORKS</h4>
+    <div class="line-container">
+      <div class="ball"></div>
+    </div>
+    <h2 class="bottom-text">Showcase</h2>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </section>
+  <section class="orbit-section">
+
+    <button class="glass-arrow arrow-left" aria-label="previous">
+    <svg viewBox="0 0 24 24" width="18">
+    <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" fill="none"/>
+    </svg>
+    </button>
+
+    <div class="orbit-window">
+    <div class="orbit-track">
+
+    <a class="orbit-card" href="#">
+    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e">
+    <div class="card-overlay">
+    <h3>Customer Experience</h3>
+    <p>Deliver seamless omnichannel support.</p>
+    </div>
+    </a>
+
+    <a class="orbit-card" href="#">
+    <img src="https://images.unsplash.com/photo-1552581234-26160f608093">
+    <div class="card-overlay">
+    <h3>Revenue Service</h3>
+    <p>Outcome-driven sales acceleration.</p>
+    </div>
+    </a>
+
+    <a class="orbit-card" href="#">
+    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9">
+    <div class="card-overlay">
+    <h3>Trust & Safety</h3>
+    <p>Protect users with scalable moderation.</p>
+    </div>
+    </a>
+
+    <a class="orbit-card" href="#">
+    <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+    <div class="card-overlay">
+    <h3>Automation</h3>
+    <p>Intelligent workflow automation.</p>
+    </div>
+    </a>
+
+    <a class="orbit-card" href="#">
+    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+    <div class="card-overlay">
+    <h3>AI Solutions</h3>
+    <p>Next-generation AI integrations.</p>
+    </div>
+    </a>
+
+    </div>
+    </div>
+
+    <button class="glass-arrow arrow-right" aria-label="next">
+    <svg viewBox="0 0 24 24" width="18">
+    <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none"/>
+    </svg>
+    </button>
+
+    <script>
+      document.querySelectorAll(".orbit-section").forEach(section=>{
+
+      const track=section.querySelector(".orbit-track")
+      const prev=section.querySelector(".arrow-left")
+      const next=section.querySelector(".arrow-right")
+
+      function cardWidth(){
+      const card=track.querySelector(".orbit-card")
+      const gap=parseInt(getComputedStyle(track).gap)
+      return card.offsetWidth + gap
+      }
+
+      prev.addEventListener("click",()=>{
+      track.scrollBy({
+      left:-cardWidth(),
+      behavior:"smooth"
+      })
+      })
+
+      next.addEventListener("click",()=>{
+      track.scrollBy({
+      left:cardWidth(),
+      behavior:"smooth"
+      })
+      })
+
+      })
+    </script>
+  </section>
+
+
+  <!-- Testimonial Video -->
+  <!-- <section class="body3 video-section">
+    <section class="body2 wrapper2">
+      <h4 class="top-text">TESTIMONIAL</h4>
+      <div class="line-container">
+        <div class="ball"></div>
+      </div>
+      <h2 class="bottom-text">OUR CLIENT SAYS</h2>
+    </section>
+    <div class="video-wrapper">
+      <video id="myVideo" preload="metadata">
+        <source src="./assets/4SightSuperia.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button id="playPauseBtn" class="play-btn">▶</button>
+    </div>
+    <a href="#" class="below-btn">All Testimonials</a>
+  </section> -->
+
+  <section class="body2 wrapper2">
+      <h4 class="top-text">TESTIMONIAL</h4>
+      <div class="line-container">
+        <div class="ball"></div>
+      </div>
+      <h2 class="bottom-text">OUR CLIENT SAYS</h2>
+  </section>
+  <section class="orbit-section video-slider">
+
+    <button class="glass-arrow arrow-left" aria-label="previous">
+    <svg viewBox="0 0 24 24" width="18">
+    <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" fill="none"/>
+    </svg>
+    </button>
+
+    <div class="orbit-window">
+    <div class="orbit-track">
+
+    <a class="orbit-card" href="#">
+    <video src="img/video1.mp4" muted loop playsinline></video>
+    <div class="card-overlay">
+    <h3>AI Automation</h3>
+    <p>Modern automation workflows.</p>
+    </div>
+    </a>
+
+    <a class="orbit-card" href="#">
+    <video src="img/video2.mp4" muted loop playsinline></video>
+    <div class="card-overlay">
+    <h3>Machine Learning</h3>
+    <p>Intelligent systems.</p>
+    </div>
+    </a>
+
+    <a class="orbit-card" href="#">
+    <video src="img/video3.mp4" muted loop playsinline></video>
+    <div class="card-overlay">
+    <h3>Data Intelligence</h3>
+    <p>Advanced analytics.</p>
+    </div>
+    </a>
+
+    <a class="orbit-card" href="#">
+    <video src="img/video4.mp4" muted loop playsinline></video>
+    <div class="card-overlay">
+    <h3>AI Automation</h3>
+    <p>Modern automation workflows.</p>
+    </div>
+    </a>
+
+    <a class="orbit-card" href="#">
+    <video src="img/video5.mp4" muted loop playsinline></video>
+    <div class="card-overlay">
+    <h3>Machine Learning</h3>
+    <p>Intelligent systems.</p>
+    </div>
+    </a>
+
+    <a class="orbit-card" href="#">
+    <video src="img/video6.mp4" muted loop playsinline></video>
+    <div class="card-overlay">
+    <h3>Data Intelligence</h3>
+    <p>Advanced analytics.</p>
+    </div>
+    </a>
+
+    </div>
+    </div>
+
+    <button class="glass-arrow arrow-right" aria-label="next">
+    <svg viewBox="0 0 24 24" width="18">
+    <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none"/>
+    </svg>
+    </button>
+
+    <script>
+      document.querySelectorAll(".video-slider").forEach(section=>{
+
+      const track=section.querySelector(".orbit-track")
+      const prev=section.querySelector(".arrow-left")
+      const next=section.querySelector(".arrow-right")
+
+      function cardWidth(){
+      const card=track.querySelector(".orbit-card")
+      const gap=parseInt(getComputedStyle(track).gap)
+      return card.offsetWidth + gap
+      }
+
+      prev.addEventListener("click",()=>{
+      track.scrollBy({left:-cardWidth(),behavior:"smooth"})
+      })
+
+      next.addEventListener("click",()=>{
+      track.scrollBy({left:cardWidth(),behavior:"smooth"})
+      })
+
+      /* autoplay control */
+
+      const videos=section.querySelectorAll("video")
+
+      const observer=new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+      const video=entry.target
+      if(entry.isIntersecting){
+      video.play()
+      }else{
+      video.pause()
+      }
+      })
+      },{threshold:.6})
+
+      videos.forEach(video=>observer.observe(video))
+
+      })
+    </script>
+  </section>
+  <section class="testimonial-section">
+    <div class="testimonial-container">
+
+      <div class="testimonial-grid">
+
+        <!-- Card 1 -->
+        <div class="testimonial-card blue">
+          <p>
+            I appreciated Kenyt.AI's on-time query resolution and very
+            professional approach, with quick response times that made it easy
+            to get the information I needed efficiently.
+          </p>
+          <div class="author">
+            <h4>Zibran</h4>
+            <span>Manager, Real Estate</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="testimonial-card orange">
+          <p>
+            Kenyt's service is very prompt. Using their product since 4 years.
+            The automation is pretty cool; I never have to worry about follow-ups anymore.
+          </p>
+          <div class="author">
+            <h4>Suni S</h4>
+            <span>Sr IT Manager, Healthcare</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="testimonial-card blue">
+          <p>
+            10/10 Recommend. Our overall experience has been really good and
+            within our budget. Efficient functioning and quick response to
+            changes from CRM team.
+          </p>
+          <div class="author">
+            <h4>Nirav N</h4>
+            <span>DGM Operations, Healthcare</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="testimonial-card orange">
+          <p>
+            The platform helped streamline our communication workflow.
+            Customer engagement has improved significantly since implementation.
+          </p>
+          <div class="author">
+            <h4>Rahul Mehta</h4>
+            <span>Operations Head</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="testimonial-card blue">
+          <p>
+            Implementation was smooth and the support team is extremely
+            responsive. The automation tools saved us countless hours.
+          </p>
+          <div class="author">
+            <h4>Ananya Roy</h4>
+            <span>Marketing Director</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="testimonial-card orange">
+          <p>
+            Great experience working with the team. Their CRM integrations
+            allowed us to scale faster while keeping operations efficient.
+          </p>
+          <div class="author">
+            <h4>Vikram Singh</h4>
+            <span>Business Development</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FAQs -->
+  <section class="approach-section">
+
+    <div class="container">
+
+      <!-- LEFT COLUMN -->
+      <div class="left-column">
+
+        <span class="section-tag">COMPANY BENEFITS</span>
+
+        <h2 class="main-heading">Our Digital Marketing Approach</h2>
+
+        <p class="intro-text">
+          At <strong>ByteWave Consultancy</strong>, we help businesses grow through strategic digital marketing,
+          combining creativity, analytics, and performance to drive measurable success.
+        </p>
+
+        <div class="image-wrapper">
+          <img src="img/misc-squares/marketing.webp" alt="Digital Marketing Approach">
+        </div>
+
+        <div class="trust-section">
+          <h3>Why <strong>ByteWave</strong> Deserves Your Trust?</h3>
+          <p>
+            We combine strategic thinking with performance execution. Our team blends data,
+            creativity, and deep market insights to craft campaigns that deliver long-term growth.
+            Also we provide tons of features & open source technologies to boost your business for <b>ABSOLUTELY FREE.</b>
+            For which people usually charge. 
+          </p>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="right-column">
+
+        <!-- <span class="section-tag">COMPANY BENEFITS</span>
+
+        <h2 class="main-heading">Our Digital Marketing Approach</h2> -->
+
+        <p class="intro-text">
+          At <strong>ByteWave</strong>, we’re dedicated to helping your business thrive in the digital age for 360 digital solution. 
+          Our digital marketing strategy is designed to boost your online & physical presence, attract the right audience, and drive tangible results. 
+          Let’s explore how we make it happen.
+        </p>
+
+        <div class="accordion active">
+          <button class="accordion-header">
+            <span>Understanding Your Business</span>
+            <span class="icon">−</span>
+          </button>
+          <div class="accordion-body">
+            <p>
+              We start by gaining a deep understanding of your business, industry,
+              and goals to build a foundation for sustainable digital growth.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <button class="accordion-header">
+            <span>Target Audience Analysis</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <p>
+              We identify your ideal audience segments to ensure every campaign
+              reaches the right people at the right time.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <button class="accordion-header">
+            <span>Keyword Research</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <p>
+              Our research identifies high-impact keywords that drive targeted
+              traffic and long-term visibility.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <button class="accordion-header">
+            <span>Content Creation</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <p>
+              We create compelling content aligned with your brand voice to
+              engage, convert, and retain customers.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <button class="accordion-header">
+            <span>Paid Advertising</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <p>
+              Strategic digital & physical ad campaigns designed to maximize ROI while
+              strengthening brand authority.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script>
+      const accordions = document.querySelectorAll(".accordion");
+
+      accordions.forEach(acc => {
+        const header = acc.querySelector(".accordion-header");
+
+        header.addEventListener("click", () => {
+
+          accordions.forEach(item => {
+            if (item !== acc) {
+              item.classList.remove("active");
+              item.querySelector(".icon").textContent = "+";
+            }
+          });
+
+          const isOpen = acc.classList.contains("active");
+
+          acc.classList.toggle("active");
+          acc.querySelector(".icon").textContent =
+            isOpen ? "+" : "−";
+        });
+      });
+    </script>
+
+  </section>
+
+
+  <!-- Blog -->
+  <section class="body2 wrapper2">
+    <h4 class="top-text">LATEST ARTICLES</h4>
+    <div class="line-container">
+      <div class="ball"></div>
+    </div>
+    <h2 class="bottom-text">Specific To The Industry</h2>
+  </section>
+  <section class="body-1">
+    <div class="blog-slider">
+      <div class="slider-wrapper">
+
+        <div class="arrow left">
+          <svg fill="none" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+          </svg>
+        </div>
+
+        <div class="arrow right">
+          <svg fill="none" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </div>
+
+        <div class="slider">
+
+          <a href="blog/blogs/cookie-less-future.html" class="card">
+            <img src="img/blogs/cookiesfuture.png">
+            <div class="card-content">
+              <h3>
+                Digital Marketing
+                <svg class="redirect-icon" fill="none" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </h3></br>
+              <h2 style="text-align: left; margin-bottom: 5px;">A Cookie Less Future in 2026</h2>
+              <p style="text-align: left; color: #292929;">A digital marketing company seeks towards a cookie less future.</p>
+            </div>
+          </a>
+
+          <a href="blog/blogs/brand-auth.html" class="card">
+            <img src="img/blogs/brandauth.png">
+            <div class="card-content">
+              <h3>
+                Branding
+                <svg class="redirect-icon" fill="none" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </h3></br>
+              <h2 style="text-align: left; margin-bottom: 5px;">Brand Authority in 2026</h2>
+              <p style="text-align: left; color: #292929;">How ByteWave Consultancy Helps Brands Build Authority</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta-section">
+            <div class="cta-container">
+
+                <!-- LEFT CONTENT -->
+                <div class="cta-left">
+                <h1>
+                    Ready to accelerate your transformation with AI-driven
+                    solutions? We’re here to build what’s next, together.
+                </h1>
+
+                <p class="cta-sub">
+                    Connect with an AI operations expert.
+                </p>
+                </div>
+
+                <!-- RIGHT CARD -->
+                <div class="cta-card">
+                <label for="contactReason">Select the reason for your contact</label>
+
+                <select id="contactReason">
+                    <option value="">Select Option</option>
+                    <option value="consulting">AI Consulting</option>
+                    <option value="development">Website / App Development</option>
+                    <option value="automation">Process Automation</option>
+                    <option value="marketing">Marketing Needs</option>
+                    <option value="design">Designing</option>
+                    <option value="hosting">Hosting Solutions</option>
+                    <option value="other">Other? Please Specify!</option>
+                </select>
+                </div>
+
+            </div>
+            <script>
+                document.getElementById("contactReason").addEventListener("change", function() {
+                const value = this.value;
+
+                if (!value) return;
+
+                if (value === "consulting") {
+                    window.location.href = "/ai-consulting";
+                }
+                if (value === "development") {
+                    window.location.href = "https://forms.gle/qrCqtstqCG78BEpS8";
+                }
+                if (value === "automation") {
+                    window.location.href = "https://forms.gle/NMCRaXefMDkKCccp6";
+                }
+                if (value === "marketing") {
+                    window.location.href = "https://forms.gle/uKKwFKvsm3Kn6uBv7";
+                }
+                if (value === "design") {
+                    window.location.href = "https://forms.gle/iEuJXrrMdJY5njuT9";
+                }
+                if (value === "hosting") {
+                    window.location.href = "https://forms.gle/tYXAbQv3dLNux6Si8";
+                }
+                if (value === "other") {
+                    window.location.href = "https://forms.gle/Gqi14yENPYP9uRmo7";
+                }
+                });
+            </script>
+  </section>
+
+  <footer>
+            <div class="main-content">
+                <div class="left box">
+                    <div class="content">
+                        <p>We're ByteWave Consultancy, are your Digital Allies. We simplify the web with a 360-degree solution. SEO, web design, apps, consulting—we've got it all. Startups or pros, we've got your back. Let's embark on a digital journey to success. </br></br> <strong>Reach Out Today!</strong></p>
+                    </div>
+                </div>
+
+                <div class="center box">
+                    <div class="content">
+                        <div class="all">
+                            <span class="text" onclick="window.location.href='./other_pages/careers.html'">Career</span>
+                        </div>
+                        <div class="all">
+                            <span class="text" onclick="window.location.href='./other_pages/ourclients.html'">Our Clients</span>
+                        </div>
+                        <div class="all">
+                            <span class="text" onclick="window.location.href='./pages/portfolio.html'">Portfolio</span>
+                        </div>
+                        <div class="all">
+                            <span class="text" onclick="window.location.href='./blog/blog.html'">Blog</span>
+                        </div>
+                        <div class="all">
+                            <span class="text" onclick="window.location.href='./pages/contact.html'">Contact Us</span>
+                        </div>
+                        <div class="all">
+                            <span class="text" onclick="window.location.href='./other_pages/policies.html'">Policies</span>
+                        </div>
+
+                        <div class="social">
+                            <a href=""><span class="fab fa-facebook-f"></span></a>
+                            <a href=""><span class="fab fa-linkedin"></span></a>
+                            <a href=""><span class="fab fa-instagram"></span></a>
+                            <a href=""><span class="fab fa-youtube"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right box">
+                    <div class="content">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="1eeee57d-4aa8-4558-bcef-5810e588d872">
+                            <input type="email" name="email" placeholder="Enter Email" class="email" required>
+                            <textarea name="message" class="msg" placeholder="Enter your query" rows="2" cols="25" required></textarea>
+                            <button type="submit" class="btn">Share Query</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <center>
+                    <span class="credit"><b>ByteWave Consultancy</b> | </span>
+                    <span class="far fa-copyright"></span><span> 2026 All rights reserved.</span>
+                </center>
+            </div>
+  </footer>
+
+  <a href="https://wa.me/916289233376" 
+    class="whatsapp-float" 
+    target="_blank" 
+    aria-label="Chat on WhatsApp">
+
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="white" aria-hidden="true">
+      <path d="M20.52 3.48A11.86 11.86 0 0012.03 0C5.4 0 .03 5.37.03 12c0 2.11.55 4.16 1.6 5.97L0 24l6.22-1.63A11.94 11.94 0 0012.03 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.22-3.51-8.52zM12.03 21.82c-1.8 0-3.55-.48-5.08-1.39l-.36-.21-3.69.97.99-3.6-.23-.37A9.79 9.79 0 012.23 12c0-5.4 4.4-9.8 9.8-9.8 2.62 0 5.08 1.02 6.93 2.87A9.74 9.74 0 0121.83 12c0 5.4-4.4 9.82-9.8 9.82zm5.4-7.35c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.46-.89-.79-1.49-1.77-1.67-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5 0 1.47 1.08 2.9 1.23 3.1.15.2 2.12 3.23 5.13 4.53.72.31 1.28.5 1.72.64.72.23 1.37.2 1.88.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/>
+    </svg>
+
+  </a>
+
+  <script>
+    document.querySelectorAll(".blog-slider").forEach(sliderComponent => {
+
+      const slider = sliderComponent.querySelector(".slider");
+      const next = sliderComponent.querySelector(".arrow.right");
+      const prev = sliderComponent.querySelector(".arrow.left");
+      const cards = slider.querySelectorAll(".card");
+
+      function getCardWidth() {
+        const card = slider.querySelector(".card");
+        const gap = 24;
+        return card.offsetWidth + gap;
+      }
+
+      function getVisibleCards() {
+        const sliderWidth = slider.offsetWidth;
+        const cardWidth = slider.querySelector(".card").offsetWidth + 24;
+        return Math.floor(sliderWidth / cardWidth);
+      }
+
+      function updateArrowsVisibility() {
+        const visible = getVisibleCards();
+
+        if (cards.length <= visible) {
+          next.style.display = "none";
+          prev.style.display = "none";
+        } else {
+          next.style.display = "flex";
+          prev.style.display = "flex";
+        }
+      }
+
+      next.addEventListener("click", () => {
+        slider.scrollBy({
+          left: getCardWidth(),
+          behavior: "smooth"
+        });
+      });
+
+      prev.addEventListener("click", () => {
+        slider.scrollBy({
+          left: -getCardWidth(),
+          behavior: "smooth"
+        });
+      });
+
+      window.addEventListener("resize", updateArrowsVisibility);
+
+      updateArrowsVisibility();
+    });
+  </script>
+
+</body>
+</html>
