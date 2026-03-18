@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../styles.css">
+
+        <script defer src="../backend/script.js"></script>
+
+        <title>ByteWave</title>
+    </head>
+
+    <body>
+
+        <header class="header">
+            <div class="top-bar">
+            <div class="top-bar__content">
+                <section class="phone">
+                <i class="fa-solid fa-phone icon"></i>
+                <span><a href="tel:6289233376">+91 6289233376</a></span>
+                </section>
+                <section class="email">
+                <i class="fa-solid fa-envelope icon"></i>
+                <span><a href="mailto:someone@example.com">bytewaveconsultancy@gmail.com</a></span>
+                </section>
+            </div>
+            </div>
+
+            <div class="bottom-bar">
+            <div class="bottom-bar__content">
+                <a href="#" class="logo">
+                <img class="logo__img" onclick="window.location.href='../index.html'" src="../img/logo/bytewave.png" alt="logo">
+                <!-- <span class="logo__text">CloudServices</span> -->
+                </a>
+            
+                <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                    <a class="nav__link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav__item">
+                    <a class="nav__link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav__item nav__item--dropdown">
+                        <a class="nav__link nav__link--dropdown" href="#">Services <span class="dropdown-arrow"></span></a>
+
+                        <ul class="dropdown">
+                            <li><a href="../services/digital-marketing.html">Digital Marketing</a></li>
+                            <li><a href="../services/seo.html">SEO</a></li>
+                            <li><a href="../services/web-development.html">Web / App Development</a></li>
+                            <li><a href="../services/graphic-design.html">Graphic Design</a></li>
+                            <li><a href="../services/ai-services.html">AI Services</a></li>
+                            <li><a href="../services/hosting.html">Hosting Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                    <a class="nav__link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                    <a class="nav__link" href="../blog/blog.html">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                    <a class="btn" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                </nav>
+        
+                <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                </div>
+            </div>
+            </div>
+        </header>
+
+        <section class="portfolio-section">
+            <div class="portfolio-container">
+
+                <!-- LEFT MENU -->
+                <div class="portfolio-menu">
+                <button class="menu-btn active" data-category="branding">Logo & Branding</button>
+                <button class="menu-btn" data-category="web">Website Development</button>
+                <button class="menu-btn" data-category="brochure">Brochure & Flyer Designing</button>
+                <button class="menu-btn" data-category="social">Social Media Creative</button>
+                <!-- <button class="menu-btn" data-category="audio">Audio Visual</button>
+                <button class="menu-btn" data-category="reels">Influencers & Reels</button> -->
+                </div>
+
+                <!-- RIGHT GRID -->
+                <div class="portfolio-grid" id="portfolioGrid"></div>
+            </div>
+            <script>
+                const portfolioData = {
+                    branding: ["https://uploads.sitepoint.com/wp-content/uploads/2016/03/1458289957powerful-images3.jpg",
+                    "https://uploads.sitepoint.com/wp-content/uploads/2016/03/1458289957powerful-images3.jpg"],
+                    web: ["https://uploads.sitepoint.com/wp-content/uploads/2016/03/1458289957powerful-images3.jpg",
+                    "https://uploads.sitepoint.com/wp-content/uploads/2016/03/1458289957powerful-images3.jpg"],
+                    brochure: ["https://uploads.sitepoint.com/wp-content/uploads/2016/03/1458289957powerful-images3.jpg",
+                    "https://uploads.sitepoint.com/wp-content/uploads/2016/03/1458289957powerful-images3.jpg",
+                    "https://uploads.sitepoint.com/wp-content/uploads/2016/03/1458289957powerful-images3.jpg",
+                    "https://uploads.sitepoint.com/wp-content/uploads/2016/03/1458289957powerful-images3.jpg"],
+                    social: ["https://uploads.sitepoint.com/wp-content/uploads/2016/03/1458289957powerful-images3.jpg",
+                    "https://uploads.sitepoint.com/wp-content/uploads/2016/03/1458289957powerful-images3.jpg",
+                    "https://uploads.sitepoint.com/wp-content/uploads/2016/03/1458289957powerful-images3.jpg",
+                    "https://uploads.sitepoint.com/wp-content/uploads/2016/03/1458289957powerful-images3.jpg",
+                    "https://uploads.sitepoint.com/wp-content/uploads/2016/03/1458289957powerful-images3.jpg",
+                    "https://uploads.sitepoint.com/wp-content/uploads/2016/03/1458289957powerful-images3.jpg",
+                    "https://uploads.sitepoint.com/wp-content/uploads/2016/03/1458289957powerful-images3.jpg",
+                    "https://uploads.sitepoint.com/wp-content/uploads/2016/03/1458289957powerful-images3.jpg"],
+                    audio: ["https://uploads.sitepoint.com/wp-content/uploads/2016/03/1458289957powerful-images3.jpg",
+                    "https://uploads.sitepoint.com/wp-content/uploads/2016/03/1458289957powerful-images3.jpg"],
+                    reels: ["https://uploads.sitepoint.com/wp-content/uploads/2016/03/1458289957powerful-images3.jpg",
+                    "https://uploads.sitepoint.com/wp-content/uploads/2016/03/1458289957powerful-images3.jpg"]
+                    };
+
+                    const buttons = document.querySelectorAll(".menu-btn");
+                    const grid = document.getElementById("portfolioGrid");
+
+                    function renderCategory(category) {
+                    grid.innerHTML = "";
+
+                    portfolioData[category].forEach(src => {
+                        const item = document.createElement("div");
+                        item.className = "portfolio-item";
+
+                        const img = document.createElement("img");
+                        img.src = src;
+
+                        item.appendChild(img);
+                        grid.appendChild(item);
+                    });
+                    }
+
+                    // Default
+                    renderCategory("branding");
+
+                    buttons.forEach(button => {
+                    button.addEventListener("click", () => {
+                        buttons.forEach(btn => btn.classList.remove("active"));
+                        button.classList.add("active");
+
+                        const category = button.dataset.category;
+                        renderCategory(category);
+                    });
+                    });
+            </script>
+        </section>
+
+        <footer>
+            <div class="main-content">
+                <div class="left box">
+                    <div class="content">
+                        <p>We're ByteWave Consultancy, are your Digital Allies. We simplify the web with a 360-degree solution. SEO, web design, apps, consulting—we've got it all. Startups or pros, we've got your back. Let's embark on a digital journey to success. </br></br> <strong>Reach Out Today!</strong></p>
+                    </div>
+                </div>
+
+                <div class="center box">
+                    <div class="content">
+                        <div class="all">
+                            <span class="text" onclick="window.location.href='../other_pages/careers.html'">Career</span>
+                        </div>
+                        <div class="all">
+                            <span class="text" onclick="window.location.href='../other_pages/ourclients.html'">Our Clients</span>
+                        </div>
+                        <div class="all">
+                            <span class="text" onclick="window.location.href='../pages/portfolio.html'">Portfolio</span>
+                        </div>
+                        <div class="all">
+                            <span class="text" onclick="window.location.href='../blog/blog.html'">Blog</span>
+                        </div>
+                        <div class="all">
+                            <span class="text" onclick="window.location.href='../pages/contact.html'">Contact Us</span>
+                        </div>
+                        <div class="all">
+                            <span class="text" onclick="window.location.href='../other_pages/policies.html'">Policies</span>
+                        </div>
+
+                        <div class="social">
+                            <a href=""><span class="fab fa-facebook-f"></span></a>
+                            <a href=""><span class="fab fa-linkedin"></span></a>
+                            <a href=""><span class="fab fa-instagram"></span></a>
+                            <a href=""><span class="fab fa-youtube"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right box">
+                    <div class="content">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="1eeee57d-4aa8-4558-bcef-5810e588d872">
+                            <input type="email" name="email" placeholder="Enter Email" class="email" required>
+                            <textarea name="message" class="msg" placeholder="Enter your query" rows="2" cols="25" required></textarea>
+                            <button type="submit" class="btn">Share Query</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <center>
+                    <span class="credit"><b>ByteWave Consultancy</b> | </span>
+                    <span class="far fa-copyright"></span><span> 2026 All rights reserved.</span>
+                </center>
+            </div>
+        </footer>
+    </body>
+</html>

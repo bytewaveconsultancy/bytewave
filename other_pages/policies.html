@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../styles.css">
+
+        <script defer src="../backend/script.js"></script>
+
+        <title>ByteWave</title>
+
+        <style>
+            .privacy-padding{
+                padding-top: 120px;
+            }
+
+            .privacy-policy{
+                text-align: center;
+                padding-right: 100px;
+                padding-left: 100px;
+            }
+            .terms{
+                text-align: center;
+                padding-right: 100px;
+                padding-left: 100px;
+            }
+            .disclaimer{
+                text-align: center;
+                padding-right: 100px;
+                padding-left: 100px;
+            }
+            .dpa{
+                text-align: center;
+                padding-right: 100px;
+                padding-left: 100px;
+            }
+            .client-contract{
+                text-align: center;
+                padding-right: 100px;
+                padding-left: 100px;
+            }
+            .privacy-policy h2{
+                text-align: left;
+            }
+            .privacy-policy p{
+                text-align: left;
+            }
+            .privacy-policy ul li{
+                text-align: left;
+            }
+            .terms h2{
+                text-align: left;
+            }
+            .terms p{
+                text-align: left;
+            }
+            .disclaimer p{
+                text-align: left;
+            }
+            .dpa h2{
+                text-align: left;
+            }
+            .dpa p{
+                text-align: left;
+            }
+            .client-contract h2{
+                text-align: left;
+            }
+            .client-contract p{
+                text-align: left;
+            }
+            .privacy-policy ul,
+            .terms ul,
+            .disclaimer ul {
+                list-style: disc;
+                padding-left: 20px;
+            }
+
+            .privacy-policy h1,
+            .terms h1,
+            .disclaimer h1,
+            .dpa h1,
+            .client-contract h1{
+                font-size: 30px;
+            }
+            .privacy-policy h2,
+            .terms h2,
+            .disclaimer h2,
+            .dpa h2,
+            .client-contract h2{
+                font-size: 18px;
+            }
+            .privacy-policy p,
+            .terms p,
+            .disclaimer p,
+            .dpa p,
+            .client-contract p{
+                font-size: 15px;
+            }
+            @media (max-width: 380px) {
+                .privacy-policy{
+                font-size: 15px;
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+            .terms{
+                font-size: 15px;
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+            .disclaimer{
+                font-size: 15px;
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+            .dpa{
+                font-size: 15px;
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+            .client-contract{
+                font-size: 15px;
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+            .privacy-policy h1,
+            .terms h1,
+            .disclaimer h1,
+            .dpa h1,
+            .client-contract h1{
+                font-size: 20px;
+            }
+            .privacy-policy h2,
+            .terms h2,
+            .disclaimer h2,
+            .dpa h2,
+            .client-contract h2{
+                font-size: 14px;
+            }
+            .privacy-policy p,
+            .terms p,
+            .disclaimer p,
+            .dpa p,
+            .client-contract p{
+                font-size: 15px;
+            }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <header class="header">
+            <div class="top-bar">
+            <div class="top-bar__content">
+                <section class="phone">
+                <i class="fa-solid fa-phone icon"></i>
+                <span><a href="tel:6289233376">+91 6289233376</a></span>
+                </section>
+                <section class="email">
+                <i class="fa-solid fa-envelope icon"></i>
+                <span><a href="mailto:someone@example.com">bytewaveconsultancy@gmail.com</a></span>
+                </section>
+            </div>
+            </div>
+
+            <div class="bottom-bar">
+            <div class="bottom-bar__content">
+                <a href="#" class="logo">
+                <img class="logo__img" onclick="window.location.href='../index.html'" src="../img/logo/bytewave.png" alt="logo">
+                <!-- <span class="logo__text">CloudServices</span> -->
+                </a>
+            
+                <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                    <a class="nav__link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav__item">
+                    <a class="nav__link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav__item nav__item--dropdown">
+                        <a class="nav__link nav__link--dropdown" href="#">Services <span class="dropdown-arrow"></span></a>
+
+                        <ul class="dropdown">
+                            <li><a href="../services/digital-marketing.html">Digital Marketing</a></li>
+                            <li><a href="../services/seo.html">SEO</a></li>
+                            <li><a href="../services/web-development.html">Web / App Development</a></li>
+                            <li><a href="../services/graphic-design.html">Graphic Design</a></li>
+                            <li><a href="../services/ai-services.html">AI Services</a></li>
+                            <li><a href="../services/hosting.html">Hosting Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                    <a class="nav__link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                    <a class="nav__link" href="../blog/blog.html">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                    <a class="btn" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                </nav>
+        
+                <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                </div>
+            </div>
+            </div>
+        </header>
+
+        <section class="privacy-policy privacy-padding">
+
+            <h1>Privacy Policy</h1></br>
+            <p><strong>Effective Date:</strong> January 1, 2026</p>
+
+            <p>
+            ByteWave Consultancy ("Company", "we", "our", or "us") is an MSME registered business in India.
+            We provide digital marketing, SEO, design, development, hosting, and AI services globally.
+            </p>
+
+            <h2>1. Information We Collect</h2>
+            <ul>
+                <li>Name, email, phone number, business details</li>
+                <li>Payment transaction details (processed via secure third-party processors)</li>
+                <li>IP address, device data, analytics data</li>
+                <li>Advertising interaction data</li>
+            </ul>
+
+            <h2>2. Legal Basis (GDPR Compliance)</h2>
+            <p>For EU/UK users, processing is based on:</p>
+            <ul>
+            <li>Consent</li>
+            <li>Contractual necessity</li>
+            <li>Legitimate interests</li>
+            <li>Legal obligations</li>
+            </ul>
+
+            <h2>3. CCPA Rights (California Users)</h2>
+            <p>California residents may request:</p>
+            <ul>
+            <li>Disclosure of collected data</li>
+            <li>Deletion of personal data</li>
+            <li>Opt-out of sale (We do not sell personal data)</li>
+            </ul>
+
+            <h2>4. India IT Act Compliance</h2>
+            <p>
+            We comply with the Information Technology Act, 2000 and applicable rules regarding
+            reasonable security practices and sensitive personal data protection.
+            </p>
+
+            <h2>5. Advertising & Analytics</h2>
+            <p>
+            We use Google Analytics, Google Ads, remarketing pixels, and tracking technologies.
+            Users may disable tracking via browser controls.
+            </p>
+
+            <h2>6. AI Processing Disclosure</h2>
+            <p>
+            AI services may involve automated processing. Clients are responsible for lawful data submission.
+            We do not use confidential client data for public AI model training.
+            </p>
+
+            <h2>7. Data Transfers</h2>
+            <p>
+            Data may be transferred internationally for service delivery.
+            </p>
+
+            <h2>8. Data Retention & Security</h2>
+            <p>
+            We retain data only as necessary and implement reasonable safeguards,
+            but no system guarantees absolute security.
+            </p>
+
+            <h2>9. Contact</h2>
+            <p>Email: info@bytewaveconsultancy.com</p>
+
+        </section>
+        </br><hr></br>
+        <section class="terms">
+
+            <h1>Terms & Conditions</h1></br>
+
+            <h2>1. No Guarantee of Results</h2>
+            <p>
+            We do not guarantee rankings, revenue growth, uptime, advertising results,
+            AI accuracy, or uninterrupted services.
+            </p>
+
+            <h2>2. Strict No Refund & No Cancellation</h2>
+            <p>
+            All payments are final. No refunds or cancellations under any circumstances once service has begun.
+            </p>
+
+            <h2>3. Limitation of Liability</h2>
+            <p>
+            Total liability shall not exceed fees paid in the preceding 30 days.
+            We are not liable for indirect, incidental, or consequential damages.
+            </p>
+
+            <h2>4. Cybersecurity Liability Waiver</h2>
+            <p>
+            While we implement reasonable safeguards, we are not liable for cyberattacks,
+            data breaches, server compromises, third-party exploits, or force majeure events.
+            Clients assume inherent digital risk.
+            </p>
+
+            <h2>5. Arbitration Clause (Mandatory)</h2>
+            <p>
+            Any dispute arising from our services shall be resolved exclusively through
+            binding arbitration under the Arbitration and Conciliation Act, 1996 (India).
+            </p>
+
+            <p>
+            Arbitration shall occur in India. Parties waive the right to court litigation
+            or class-action proceedings.
+            </p>
+
+            <h2>6. Indemnification</h2>
+            <p>
+            Clients agree to indemnify and hold ByteWave Consultancy harmless
+            from claims arising from misuse, unlawful content, or regulatory violations.
+            </p>
+
+            <h2>7. Governing Law</h2>
+            <p>
+            Governed exclusively by the laws of India.
+            </p>
+
+        </section>
+        </br><hr></br>
+        <section class="disclaimer">
+
+            <h1>Disclaimer</h1></br>
+
+            <p>
+            All services are provided "as is" without warranties of any kind.
+            Business, marketing, hosting, and AI services involve inherent risks.
+            </p>
+
+            <p>
+            Clients are solely responsible for compliance with local laws,
+            data protection requirements, and review of AI-generated outputs.
+            </p>
+
+            <p>
+            We disclaim liability for third-party platforms including Google,
+            Meta, hosting providers, APIs, or software integrations.
+            </p>
+
+        </section>
+        </br><hr></br>
+        <section class="dpa">
+
+            <h1>Data Processing Agreement</h1></br>
+
+            <h2>1. Roles</h2>
+            <p>Client = Data Controller | ByteWave = Data Processor</p>
+
+            <h2>2. Processing Scope</h2>
+            <p>Processing limited to contracted services only.</p>
+
+            <h2>3. Security</h2>
+            <p>Appropriate technical and organizational safeguards implemented.</p>
+
+            <h2>4. Subprocessors</h2>
+            <p>Client authorizes use of hosting, analytics, and infrastructure vendors.</p>
+
+            <h2>5. Breach Notification</h2>
+            <p>We will notify client without undue delay upon confirmed breach.</p>
+
+            <h2>6. Data Deletion</h2>
+            <p>Upon termination, data shall be deleted unless legally required to retain.</p>
+
+            <h2>7. Liability Limitation</h2>
+            <p>Liability limited per master service agreement.</p>
+
+        </section>
+        </br><hr></br>
+        <section class="client-contract">
+
+            <h1>Master Service Agreement</h1></br>
+
+            <h2>1. Scope of Work</h2>
+            <p>Detailed deliverables defined in proposal/invoice.</p>
+
+            <h2>2. Payment Terms</h2>
+            <p>Upfront payment required. Milestones non-refundable.</p>
+
+            <h2>3. Confidentiality</h2>
+            <p>Both parties agree to maintain confidentiality.</p>
+
+            <h2>4. Intellectual Property</h2>
+            <p>Ownership transferred upon full payment unless otherwise agreed.</p>
+
+            <h2>5. Limitation of Liability</h2>
+            <p>Liability capped to fees paid.</p>
+
+            <h2>6. Dispute Resolution</h2>
+            <p>Mandatory arbitration Globally. Must agree to it otherwise, no contract.</p>
+
+        </section>
+        </br></br>
+        <div id="cookie-banner" class="cookie-banner">
+            <p>
+                We use cookies for analytics and advertising purposes.
+                By clicking "Accept", you consent to tracking technologies.
+            </p>
+            <button onclick="acceptCookies()">Accept</button>
+            <button onclick="declineCookies()">Decline</button>
+        </div>
+        <script>
+            function acceptCookies(){
+            localStorage.setItem("cookieConsent","accepted");
+            document.getElementById("cookie-banner").style.display="none";
+            }
+            function declineCookies(){
+            localStorage.setItem("cookieConsent","declined");
+            document.getElementById("cookie-banner").style.display="none";
+            }
+            window.onload=function(){
+            if(!localStorage.getItem("cookieConsent")){
+                document.getElementById("cookie-banner").style.display="block";
+            }
+            };
+        </script>
+
+        <footer>
+            <div class="main-content">
+                <div class="left box">
+                    <div class="content">
+                        <p>We're ByteWave Consultancy, are your Digital Allies. We simplify the web with a 360-degree solution. SEO, web design, apps, consulting—we've got it all. Startups or pros, we've got your back. Let's embark on a digital journey to success. </br></br> <strong>Reach Out Today!</strong></p>
+                    </div>
+                </div>
+
+                <div class="center box">
+                    <div class="content">
+                        <div class="all">
+                            <span class="text" onclick="window.location.href='../other_pages/careers.html'">Career</span>
+                        </div>
+                        <div class="all">
+                            <span class="text" onclick="window.location.href='../other_pages/ourclients.html'">Our Clients</span>
+                        </div>
+                        <div class="all">
+                            <span class="text" onclick="window.location.href='../pages/portfolio.html'">Portfolio</span>
+                        </div>
+                        <div class="all">
+                            <span class="text" onclick="window.location.href='../blog/blog.html'">Blog</span>
+                        </div>
+                        <div class="all">
+                            <span class="text" onclick="window.location.href='../pages/contact.html'">Contact Us</span>
+                        </div>
+                        <div class="all">
+                            <span class="text" onclick="window.location.href='../other_pages/policies.html'">Policies</span>
+                        </div>
+
+                        <div class="social">
+                            <a href=""><span class="fab fa-facebook-f"></span></a>
+                            <a href=""><span class="fab fa-linkedin"></span></a>
+                            <a href=""><span class="fab fa-instagram"></span></a>
+                            <a href=""><span class="fab fa-youtube"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right box">
+                    <div class="content">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="1eeee57d-4aa8-4558-bcef-5810e588d872">
+                            <input type="email" name="email" placeholder="Enter Email" class="email" required>
+                            <textarea name="message" class="msg" placeholder="Enter your query" rows="2" cols="25" required></textarea>
+                            <button type="submit" class="btn">Share Query</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <center>
+                    <span class="credit"><b>ByteWave Consultancy</b> | </span>
+                    <span class="far fa-copyright"></span><span> 2026 All rights reserved.</span>
+                </center>
+            </div>
+        </footer>
+
+    </body>
+</html>
