@@ -35,34 +35,9 @@ dropdownLink.addEventListener('click', function(e) {
 });
 
 
-// Header Hero Video
-const video = document.getElementById("heroVideo");
-const toggleBtn = document.getElementById("videoToggle");
 
-// Fade in when ready
-video.addEventListener("canplay", () => {
-  video.classList.add("loaded");
-});
 
-// Play / Pause toggle
-toggleBtn.addEventListener("click", () => {
-  if (video.paused) {
-    video.play();
-    toggleBtn.textContent = "Pause";
-  } else {
-    video.pause();
-    toggleBtn.textContent = "Play";
-  }
-});
 
-// Pause video when not visible (performance boost)
-document.addEventListener("visibilitychange", () => {
-  if (document.hidden) {
-    video.pause();
-  } else {
-    video.play();
-  }
-});
 
 
 

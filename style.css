@@ -31,7 +31,7 @@ body {
 .header {
   position: fixed;
   width: 100%;
-  z-index: 4;
+  z-index: 5;
 }
 
 .top-bar {
@@ -286,69 +286,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-.hero {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  background: black;
-}
-
-.hero video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 1.2s ease-in-out;
-}
-
-/* Fade-in effect */
-.hero video.loaded {
-  opacity: 1;
-}
-
-/* Toggle button */
-.video-toggle {
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
-  z-index: 2;
-  padding: 10px 18px;
-  border: none;
-  border-radius: 30px;
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  backdrop-filter: blur(8px);
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.video-toggle:hover {
-  background: rgba(255, 255, 255, 0.4);
-}
-
-/* Mobile Optimization */
-@media (max-width: 768px) {
-  .video-toggle {
-    bottom: 20px;
-    right: 20px;
-    padding: 8px 14px;
-    font-size: 14px;
-  }
-}
 
 
 .whatsapp-float {
